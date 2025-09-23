@@ -35,7 +35,7 @@ let entries = {}; // { userId: { guesses: [], bonus: 0 } }
 let gameActive = false;
 
 // 📌 Initialisation du bot
-client.once("ready", async () => {
+client.once("clientready", async () => {
   console.log("🚀 Bot prêt et fonctionnel !");
   const channel = await client.channels.fetch(CHANNEL_ID);
 
